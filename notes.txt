@@ -1,0 +1,34 @@
+project initialization
+using dotenv and prettier
+and database connection
+
+
+
+
+there are two ways of connceting database the one is in index.js 
+just like this:
+import mongoose from 'mongoose';
+import {DB_NAME} from "./constants";
+
+import express from "express"
+const app=express()
+
+(async()=>{
+    try{
+        await mongoose.connect('${process.env.MONGODB_URL}/${DB_NAME}')
+        app.on("error", ()=>{
+            console.log("error:",)
+            throw error;
+        })
+        app.listen(process.env.PORT, ()=>{
+            console.log('app is lsitening on port $ {process.env.PORT}');
+        })
+    } catch(error){
+        console.log("error:",error);
+
+        throw err
+    }
+})()
+
+
+the second method is to in using another file in db folder
