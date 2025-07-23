@@ -32,3 +32,6 @@ const app=express()
 
 
 the second method is to in using another file in db folder
+using cors
+using cookie parser
+using middleware
