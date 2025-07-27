@@ -35,3 +35,8 @@ the second method is to in using another file in db folder
 using cors
 using cookie parser
 using middleware
+make utils for api arror
+make use model and video model
+use agreegatepaginate in video model
+use bcrypt for storing password in hash
+use jwt for storing tokens
