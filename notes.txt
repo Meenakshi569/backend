@@ -40,3 +40,11 @@ make use model and video model
 use agreegatepaginate in video model
 use bcrypt for storing password in hash
 use jwt for storing tokens
+use cloudinary 
+use mluter as middleware
+
+
+Http crash course
+http=> hyper text transfer protocol
+
+
